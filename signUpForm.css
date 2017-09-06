@@ -1,3 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Merriweather');
+body {
+  background: lightblue;
+  height: 100%;
+  max-height: 100%
+}
+form {
+  background: tan;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: 'Merriweather', serif;
+  /*font-size: 1.2em;*/
+  line-height: 1.75em;
+
+}
+h1 {
+  font-family: 'Crimson Text', serif;
+  font-weight: bold;
+  text-align: center;
+}
+h2 {
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+}
+.signUp {
+  list-style-type: none;
+}
+#radioButtons {
+  list-style-type: none;
+}
+#checkButtons {
+  list-style-type: none;
+}
+label {
+    display: block;
+    float: left;
+    text-align: right;
+    width: 33%;
+    padding: 0;
+	  margin-right: 3%;
+  }
+input {
+  width: 25%;
+  height: 1.2em
+}
+#submit {
+  width: 33%;
+  height: 2.5em;
+  border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+
+#subBtn {
+  margin: auto;
+  Text-align: center;
+}
+
+footer {
+  font-size: small;
+  text-align: center;
+}
+
 #box-container {
   display: flex;
 }
