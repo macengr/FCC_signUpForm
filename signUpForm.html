@@ -4,7 +4,6 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Pittsburgh Programming Palaver Survey</title>
-		<link rel = "stylesheet" type = "text/css" href = "signUpForm.css" />
 	</head>
 	<body>
 		<form id="survey-form" method="post" action="/submit">
@@ -13,93 +12,97 @@
 				<h2>Join PPP!</h2>
 				<p id="description">We would love to have you as a member! Please fill out the form below to join our group!</p>
 			</hgroup>
-
-			<div id="box-container">
-				<div id="box-1">
-					<ul class="signUp">
-						<li><label for="name" id="name-label"> * My name is:</label></li>
-						<li><label for="register-address">My street address is:</label></li>
-						<li><label for="register-city">City</label></li>
-						<li><label for="myState">State</label></li>
-						<li><label for="regZip">Zip Code</label></li>
-						<li><label for="regPhone">Phone</label></li>
-						<li><label for="email" id="email-label">* My email address is:</label></li>
-						<li><label for="url">My website is located at:</label></li>
-						<li>Programming Experience Level:</li>
-						<li>Languages Programmed In:</li>
-						<li><label for="startdate">* My membership should start:</label></li>
-						<li><label for="newsletter">Also send me <cite>The PPP Post!</cite></label></li>
-						<li><label for="qtyNewsLtr" id="number-label">Number of copies (0 - 10):</li>
-
-					</ul>
-				</div>
-				<div id="box-2">
-					<ul class="signUp">
-						<li><input type="text" id="name" name="name" required aria-required="true" placeholder="First and Last"></li>
-						<li><input type="text" id="register-address" name="street-address"></li>
-						<li><input type="text" id="register-city" name="city"></li>
-						<li><input type="text" list="states" id="states" name="myState">
-							<datalist id="dropdown">
-								<option value="Alabama">
-								<option value = "Alaska">
-								<option value = "Arizona">
-								<option value="Arkansas">
-								<option value = "California">
-								<option value = "Colorado">
-								<option value = "Connecticut">
-								<option value="Delaware">
-								<option value = "Florida">
-								<option value = "Georgia">
-								<option value = "Guam">
-								<option value = "Hawaii">
-								<option value = "Idaho">
-								<option value = "Illinois">
-								<option value = "Indiana">
-								<option value = "Iowa">
-								<option value = "Kansas">
-								<option value = "Kentucky">
-								<option value = "Louisiana">
-								<option value = "Maine">
-								<option value = "Maryland">
-								<option value = "Michigan">
-								<option value = "Minnesota">
-								<option value = "Massachusetts">
-								<option value = "Mississippi">
-								<option value = "Missouri">
-								<option value = "Montana">
-								<option value = "New Hampshire">
-								<option value = "New Jersey">
-								<option value = "New Mexico">
-								<option value = "New York">
-								<option value = "Nebraska">
-								<option value = "Nevada">
-								<option value = "North Carolina">
-								<option value = "North Dakota">
-								<option value = "Ohio">
-								<option value = "Oklahoma">
-								<option value = "Oregon">
-								<option value = "Pennsylvania">
-								<option value = "Puerto Rico">
-								<option value = "Rhode Island">
-								<option value = "South Carolina">
-								<option value = "South Dakota">
-								<option value = "Tennessee">
-								<option value = "Texas">
-								<option value = "Utah">
-								<option value = "Vermont">
-								<option value = "Virginia">
-								<option value = "Washington">
-								<option value = "Washington, D.C.">
-								<option value = "West Virginia">
-								<option value = "Wisconsin">
-								<option value = "Wyoming">
-							</datalist>
-					</li>
-					<li><input type="text" id="regZip" name="regZip"></li>
-					<li><input type="tel" id="regPhone" name="regPhone"></li>
-					<li><input type="email" id="email" name="email" required aria-required="true" placeholder="example@example.com"></li>
-					<li><input type="url" id="url" name="url"></li>
-					<li><ul id="radioButtons">
+			<ul class="signUp">
+<div id="nameField">
+				<li>
+					<label for="name" id="name-label"> * My name is:</label>
+					<input type="text" id="name" name="name" required aria-required="true" placeholder="First and Last">
+				</li>
+        </div>
+				<li>
+					<label for="register-address">My street address is:</label>
+					<input type="text" id="register-address" name="street-address">
+				</li>
+				<li>
+					<label for="register-city">City</label>
+					<input type="text" id="register-city" name="city"></li>
+				<li>
+					<label for="myState">State</label>
+					<input type="text" list="states" id="states" name="myState">
+						<datalist id="dropdown">
+							<option value="Alabama">
+							<option value = "Alaska">
+							<option value = "Arizona">
+							<option value="Arkansas">
+							<option value = "California">
+							<option value = "Colorado">
+							<option value = "Connecticut">
+							<option value="Delaware">
+							<option value = "Florida">
+							<option value = "Georgia">
+							<option value = "Guam">
+							<option value = "Hawaii">
+							<option value = "Idaho">
+							<option value = "Illinois">
+							<option value = "Indiana">
+							<option value = "Iowa">
+							<option value = "Kansas">
+							<option value = "Kentucky">
+							<option value = "Louisiana">
+							<option value = "Maine">
+							<option value = "Maryland">
+							<option value = "Michigan">
+							<option value = "Minnesota">
+							<option value = "Massachusetts">
+							<option value = "Mississippi">
+							<option value = "Missouri">
+							<option value = "Montana">
+							<option value = "New Hampshire">
+							<option value = "New Jersey">
+							<option value = "New Mexico">
+							<option value = "New York">
+							<option value = "Nebraska">
+							<option value = "Nevada">
+							<option value = "North Carolina">
+							<option value = "North Dakota">
+							<option value = "Ohio">
+							<option value = "Oklahoma">
+							<option value = "Oregon">
+							<option value = "Pennsylvania">
+							<option value = "Puerto Rico">
+							<option value = "Rhode Island">
+							<option value = "South Carolina">
+							<option value = "South Dakota">
+							<option value = "Tennessee">
+							<option value = "Texas">
+							<option value = "Utah">
+							<option value = "Vermont">
+							<option value = "Virginia">
+							<option value = "Washington">
+							<option value = "Washington, D.C.">
+							<option value = "West Virginia">
+							<option value = "Wisconsin">
+							<option value = "Wyoming">
+						</datalist>
+				</li>
+				<li>
+					<label for="regZip">Zip Code</label>
+					<input type="text" id="regZip" name="regZip">
+				</li>
+				<li>
+					<label for="regPhone">Phone</label>
+					<input type="tel" id="regPhone" name="regPhone">
+				</li>
+				<li>
+					<label for="email" id="email-label">* My email address is:</label>
+					<input type="email" id="email" name="email" required aria-required="true" placeholder="example@example.com">
+				</li>
+				<li>
+					<label for="url">My website is located at:</label>
+					<input type="url" id="url" name="url">
+				</li>
+				<li>Programming Experience Level:
+					<ul id="radioButtons">
             <radiogroup name="expLvl">
 						<li>
 							<input type="radio" value="beginner" name="expLvl">
@@ -120,7 +123,7 @@
              </radiogroup>
 					</ul>
 				</li>
-				<li>
+				<li>Languages Programmed In:</li>
 					<ul id="checkButtons">
 						<li>
 							<input type="checkbox" value="languages" name="javascript">
@@ -145,25 +148,25 @@
 						<li>
 							<input type="checkbox" value="languages" name="other">
 							<label for="other">Other:</label>
-							<input type="text" value="" name="otherText"></li>
+              <input type="text" value="" name="otherText"></li>
 					</ul>
+				<li>
+					<label for="startdate">* My membership should start:</label>
+					<input type="date" id="startdate" name="startdate" required aria-required="true">
 				</li>
-				<li><input type="date" id="startdate" name="startdate" required aria-required="true"></li>
-				<li><input type="checkbox" value="newsletter" name="newsletter"></li>
-				<li><input type="number" id="number" placeholder="##" min="0" max="10"></li>
-
-					</ul>
-				</div>
-			</div>
-
-
-				Comments<textarea></textarea>
+				<li>
+					<label for="newsletter">Also send me <cite>The PPP Post!</cite></label>
+					<input type="checkbox" value="newsletter" name="newsletter">
+				</li>
+        <li><label for="qtyNewsLtr" id="number-label">Number of copies (0 - 10):</li>
+          <input type="number" id="number" placeholder="##" min="0" max="10">
+				<li>Comments<textarea></textarea></li>
         <div id="subBtn">
-
+				<li>
 					<input type="submit" id="submit" value="Submit">
-
+				</li>
         </div>
-
+			</ul>
 
 	</form>
     <footer>
