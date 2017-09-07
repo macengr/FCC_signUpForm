@@ -32,18 +32,8 @@ h2 {
 #checkButtons {
   list-style-type: none;
 }
-label {
-    display: block;
-    float: left;
-    text-align: right;
-    width: 33%;
-    padding: 0;
-	  margin-right: 3%;
-  }
-input {
-  width: 25%;
-  height: 1.2em
-}
+
+
 #submit {
   width: 33%;
   height: 2.5em;
@@ -54,11 +44,34 @@ border-bottom-left-radius: 5px;
 }
 
 #subBtn {
-  margin: auto;
-  Text-align: center;
+  display: flex;
+  justify-content:center;
+  padding-top: 15px;
 }
 
 footer {
   font-size: small;
   text-align: center;
+}
+
+.labelText {
+  display: inline-block;
+  text-align: right;
+  padding: 5px;
+  width:40%;
+}
+
+.userInput {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45%;
+  text-align: left;
+}
+
+#comment {
+  width: 300px;
+}
+
+.text-input {
+  width: 300px;
 }
